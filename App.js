@@ -139,6 +139,10 @@ class App extends Component{
           </TouchableOpacity>
         </View>
 
+        <View style={styles.autor}>
+          <Text style={styles.textoAutor}>by Richael Fernando Nunes</Text>
+        </View>
+
       </View>
     );
   }
@@ -197,7 +201,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     color: '#dd7b22'
+  },
+  autor:{
+    height:30
+  },
+  textoAutor:{
+    color: '#ccc'
   }
+
 });
 
 export default App;
