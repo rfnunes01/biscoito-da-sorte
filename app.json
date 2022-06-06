@@ -2,16 +2,10 @@
   "expo": {
     "name": "Biscoito da Sorte",
     "slug": "biscoito-da-sorte",
-    "privacy": "public",
-    "sdkVersion": "36.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -24,13 +18,20 @@
       "**/*"
     ],
     "ios": {
-	  "bundleIdentifier": "com.rfnunes.bicoitodasorte",
+      "bundleIdentifier": "com.rfnunes.bicoitodasorte",
       "buildNumber": "1.0.0",
       "supportsTablet": true
     },
     "android": {
       "package": "com.rfnunes.bicoitodasorte",
-	  "versionCode": 1
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }
